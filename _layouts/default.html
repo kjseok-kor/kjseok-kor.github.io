@@ -1,0 +1,37 @@
+{%- assign prof = site.data.profile -%}
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}" data-view="cover">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="author" content="{{ prof.name }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ prof.photo }}">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+  <link rel="icon" href="{{ prof.photo | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Noto+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <style>:root { --cover: {{ prof.cover_color | default: '#193747' }}; }</style>
+  <script>
+    /* Pick the view from the URL before first paint, so there is no flash. */
+    (function () {
+      var d = document.documentElement;
+      d.className += ' js';
+      var v = (location.hash || '').replace('#', '');
+      var ok = { about: 1, publications: 1, news: 1, cv: 1 };
+      d.setAttribute('data-view', ok[v] ? v : 'cover');
+    })();
+  </script>
+</head>
+<body>
+  {{ content }}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

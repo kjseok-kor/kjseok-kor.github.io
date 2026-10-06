@@ -1,0 +1,139 @@
+# Publications
+#
+# Fields
+#   title     : paper title
+#   authors   : author list; your name (profile.yml > highlight_name) is bolded automatically
+#   abbr      : short venue label for the colored badge (e.g. IoT-J, AAAI)
+#   venue     : full venue line shown in italics
+#   year      : publication year; published papers are grouped by this
+#   status    : published | under_review
+#   review    : (under_review only) review status label, e.g. "Under Review", "Major Revision"
+#   metric    : (optional) e.g. "IF 8.9 · JCR top 4.1%"
+#   paper     : (optional) link or PDF path; the PAPER button is hidden when empty
+#   selected  : true to show on the About page under Selected Publications
+#
+# Order inside each year follows the order in this file.
+# When a paper under review is accepted: change status to published, fill year/venue/paper.
+
+# ---------- Under review ----------
+
+- title: "(Title withheld due to double-blind policy)"
+  authors: "Jongseok Kim, Seongae Kang, Ohyun Jo*"
+  abbr: ICLR
+  venue: "International Conference on Learning Representations (ICLR 2027)"
+  year: 2026
+  status: under_review
+  review: Under Review
+
+- title: "Are All Augmented Views Equally Useful? RD-Bank for Complex-Valued Data Augmentation"
+  authors: "Jongseok Kim, Byunghyuk Youn, Woongyu Min, Suwoong Lee, Ohyun Jo*"
+  abbr: ICASSP
+  venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027)"
+  year: 2026
+  status: under_review
+  review: Under Review
+
+- title: "From Processed to Raw: Importance-Guided Feature Distillation across Audio Representations"
+  authors: "Jongseok Kim, Jonghwan Shin, Suwoong Lee, Ohyun Jo*"
+  abbr: ICASSP
+  venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027)"
+  year: 2026
+  status: under_review
+  review: Under Review
+
+- title: "(Title withheld due to double-blind policy)"
+  authors: "Seongae Kang, Jongseok Kim, Jee Hyun Kim, Yuhan Lee, Ohyun Jo*"
+  abbr: SAC
+  venue: "ACM/SIGAPP Symposium on Applied Computing (SAC 2027)"
+  year: 2026
+  status: under_review
+  review: Under Review
+
+- title: "(Title withheld due to double-blind policy)"
+  authors: "Jongseok Kim†, Byunghyuk Youn†, Ohyun Jo*"
+  abbr: TMC
+  venue: "IEEE Transactions on Mobile Computing"
+  year: 2026
+  status: under_review
+  review: Under Review
+  metric: "IF 8.8 · JCR top 5.1%"
+
+- title: "Hybrid Feature Selection for Assessment of Oceanic Channel via Explainable AI"
+  authors: "Jongseok Kim, Ho-Shin Cho, Ohyun Jo*"
+  abbr: JOES
+  venue: "Journal of Ocean Engineering and Science"
+  year: 2026
+  status: under_review
+  review: Major Revision
+  metric: "IF 5.8 · JCR top 5.8%"
+
+# ---------- Published ----------
+
+- title: "LeMoF: Level-guided Multimodal Fusion for Heterogeneous Clinical Data"
+  authors: "Jongseok Kim†, Seongae Kang†, Jonghwan Shin, Yuhan Lee, Ohyun Jo*"
+  abbr: arXiv
+  venue: "arXiv preprint arXiv:2601.10092, 2026"
+  year: 2026
+  status: published
+  paper: /assets/files/lemof.pdf
+  selected: true
+
+- title: "Restoration of Noisy Reference Signal by Using Diffusion Model"
+  authors: "Jonghwan Shin, Jongseok Kim, Ohyun Jo*"
+  abbr: WCL
+  venue: "IEEE Wireless Communications Letters, 2026"
+  year: 2026
+  status: published
+  paper: ""
+
+- title: "ComplexRep: Integrating Learned Representations to Enhance Complex-valued Data Transparency"
+  authors: "Jongseok Kim, Woonggyu Min, Juyeop Kim, Ohyun Jo*"
+  abbr: IoT-J
+  venue: "IEEE Internet of Things Journal, 2026"
+  year: 2026
+  status: published
+  metric: "IF 8.9 · JCR top 4.1%"
+  paper: /assets/files/ComplexRep.pdf
+  selected: true
+
+- title: "Analysis on Underwater Channel by Using Shapley Additive Explanations"
+  authors: "Jongseok Kim, Ho-Shin Cho, Ohyun Jo*"
+  abbr: J-KICS
+  venue: "Journal of Korean Institute of Communications and Information Sciences, 2025 (SCOPUS)"
+  year: 2025
+  status: published
+  paper: /assets/files/jkics.pdf
+
+- title: "Denoising Method for Wireless Communication Signals Based on Convolutional AutoEncoder"
+  authors: "Woonggyu Min, Jongseok Kim, Ohyun Jo*"
+  abbr: ICAIIC
+  venue: "International Conference on Artificial Intelligence in Information and Communication (ICAIIC), 2025"
+  year: 2025
+  status: published
+  paper: /assets/files/Denoising.pdf
+
+- title: "MuShAug: Boosting Sequence Signal Classification via Multishape Augmentation"
+  authors: "Jongseok Kim, Ohyun Jo*"
+  abbr: IoT-J
+  venue: "IEEE Internet of Things Journal, 2024"
+  year: 2024
+  status: published
+  metric: "IF 10.6 · JCR top 2.2%"
+  paper: /assets/files/MushAug.pdf
+  selected: true
+
+- title: "IncepSeqNet: Advancing Signal Classification with Multi-Shape Augmentations (Student Abstract)"
+  authors: "Jongseok Kim, Ohyun Jo*"
+  abbr: AAAI
+  venue: "AAAI Conference on Artificial Intelligence (Student Abstract), 2024"
+  year: 2024
+  status: published
+  paper: /assets/files/Incepseqnet.pdf
+
+- title: "Intelligent Index Classification Method Based on Machine Learning for Detection of Reference Signal in 5G Networks"
+  authors: "Seungwoo Kang†, Taegyeom Lee†, Jongseok Kim, A-reum-saem Lee, Juyeop Kim, Ohyun Jo*"
+  abbr: Access
+  venue: "IEEE Access, 2023"
+  year: 2023
+  status: published
+  paper: /assets/files/Intelligent.pdf

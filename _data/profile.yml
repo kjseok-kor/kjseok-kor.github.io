@@ -1,0 +1,41 @@
+# Basic profile shown in the sidebar and on the About page.
+
+name: Jongseok Kim
+tagline: "Post-master's researcher at ETRI. Multimodal learning, self-supervised representation learning, and efficient AI."
+photo: /assets/img/profile.jpg
+
+# Sidebar color. The venue badges on publications use the same color.
+cover_color: "#193747"
+
+email: kjseok@etri.re.kr
+scholar: https://scholar.google.co.kr/citations?user=nzFafjcAAAAJ
+github: https://github.com/kjseok-kor
+
+# Put your compiled CV at this path (assets/files/cv.pdf).
+cv_pdf: /assets/files/cv.pdf
+
+# How your name appears in author lists. Every occurrence is bolded and underlined.
+highlight_name: Jongseok Kim
+
+# Number of news items shown on the About page.
+recent_news_count: 4
+
+interests:
+  - Multimodal Learning
+  - Self-supervised Representation Learning
+  - Efficient AI
+  - Explainable AI
+  - Signal Processing
+
+# About text. Each item is one paragraph; HTML links are allowed.
+about:
+  - >-
+    I am a post-master's researcher at the
+    <a href="https://www.etri.re.kr/eng/main/main.etri">Electronics and Telecommunications Research Institute (ETRI)</a>, Korea.
+    I received my M.S. in Computer Science from Chungbuk National University, advised by
+    <a href="https://scholar.google.co.kr/citations?user=PA6LfawAAAAJ">Prof. Ohyun Jo</a>,
+    where I received the Outstanding Graduate Researcher Award.
+  - >-
+    My research focuses on multimodal learning, self-supervised representation learning, and efficient AI.
+    I have worked on complex-valued wireless signals, underwater channels, audio, and heterogeneous clinical data,
+    across national projects on 5G+ base stations, IoT edge AI, and underwater surveillance.

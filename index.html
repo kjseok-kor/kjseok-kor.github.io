@@ -1,0 +1,129 @@
+---
+layout: default
+---
+{%- assign prof = site.data.profile -%}
+{%- assign published = site.data.publications | where: "status", "published" -%}
+{%- assign reviewing = site.data.publications | where: "status", "under_review" -%}
+{%- assign years = published | map: "year" | uniq | sort | reverse -%}
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <img class="avatar" src="{{ prof.photo | relative_url }}" alt="Portrait of {{ prof.name }}" width="168" height="168">
+      <div class="intro">
+        <a class="name" href="#" aria-label="{{ prof.name }}, back to the cover">{{ prof.name }}</a>
+        <p class="tagline">{{ prof.tagline }}</p>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <a href="#about" data-nav="about">About</a>
+        <a href="#publications" data-nav="publications">Publications</a>
+        <a href="#news" data-nav="news">News</a>
+        <a href="#cv" data-nav="cv">CV</a>
+      </nav>
+      <div class="social">
+        {%- if prof.email %}
+        <a href="mailto:{{ prof.email }}" aria-label="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        {%- endif %}
+        {%- if prof.scholar %}
+        <a href="{{ prof.scholar }}" aria-label="Google Scholar" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+        </a>
+        {%- endif %}
+        {%- if prof.github %}
+        <a href="{{ prof.github }}" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        </a>
+        {%- endif %}
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <!-- ===================== About ===================== -->
+    <section class="page" data-page="about" aria-labelledby="h-about">
+      <h2 id="h-about" class="page-title">About</h2>
+      {%- for para in prof.about %}
+      <p{% if forloop.first %} class="lead"{% endif %}>{{ para }}</p>
+      {%- endfor %}
+      <div class="chips">
+        {%- for t in prof.interests %}<span class="chip">{{ t }}</span>{% endfor %}
+      </div>
+
+      <h2 class="section-title">Selected Publications</h2>
+      <div class="pub-list">
+        {%- for p in published %}{% if p.selected %}
+        {% include pub-item.html p=p %}
+        {%- endif %}{% endfor %}
+      </div>
+      <a class="more" href="#publications">All publications →</a>
+
+      <h2 class="section-title">Recent News</h2>
+      <ul class="news-list">
+        {%- for n in site.data.news limit: prof.recent_news_count %}
+        <li><time>{{ n.date }}</time><span>{{ n.text }}</span></li>
+        {%- endfor %}
+      </ul>
+      <a class="more" href="#news">All news →</a>
+    </section>
+
+    <!-- ===================== Publications ===================== -->
+    <section class="page" data-page="publications" aria-labelledby="h-pubs">
+      <h2 id="h-pubs" class="page-title">Publications</h2>
+      <p class="legend">† co-first authors · * corresponding author</p>
+
+      {%- if reviewing.size > 0 %}
+      <details class="review">
+        <summary>
+          <span class="review-head">Under Review <span class="count">{{ reviewing.size }}</span></span>
+          <span class="review-toggle"><span class="when-closed">Show</span><span class="when-open">Hide</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </span>
+        </summary>
+        <div class="review-list">
+          {%- for p in reviewing %}
+          {% include review-item.html p=p %}
+          {%- endfor %}
+        </div>
+      </details>
+      {%- endif %}
+
+      {%- for y in years %}
+      <h3 class="year">{{ y }}</h3>
+      <div class="pub-list">
+        {%- for p in published %}{% if p.year == y %}
+        {% include pub-item.html p=p %}
+        {%- endif %}{% endfor %}
+      </div>
+      {%- endfor %}
+    </section>
+
+    <!-- ===================== News ===================== -->
+    <section class="page" data-page="news" aria-labelledby="h-news">
+      <h2 id="h-news" class="page-title">News</h2>
+      <ul class="news-list news-full">
+        {%- for n in site.data.news %}
+        <li><time>{{ n.date }}</time><span>{{ n.text }}</span></li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section class="page" data-page="cv" aria-labelledby="h-cv">
+      <div class="cv-head">
+        <h2 id="h-cv" class="page-title">CV</h2>
+        {%- if prof.cv_pdf %}<a class="btn" href="{{ prof.cv_pdf | relative_url }}" target="_blank" rel="noopener">Download PDF</a>{% endif %}
+      </div>
+      {% include cv-section.html heading="Experience" entries=site.data.cv.experience %}
+      {% include cv-section.html heading="Education" entries=site.data.cv.education %}
+      {% include cv-section.html heading="Research Projects" entries=site.data.cv.projects %}
+      {% include cv-section.html heading="Honors &amp; Awards" entries=site.data.cv.awards %}
+      {% include cv-section.html heading="Patents" entries=site.data.cv.patents %}
+      {% include cv-section.html heading="Teaching" entries=site.data.cv.teaching %}
+    </section>
+
+    <footer class="footer">© {{ site.time | date: "%Y" }} {{ prof.name }}</footer>
+  </main>
+</div>

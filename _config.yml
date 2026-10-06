@@ -1,0 +1,16 @@
+# Site settings for https://kjseok-kor.github.io
+# GitHub Pages builds this with Jekyll automatically. No plugins or Actions needed.
+
+title: Jongseok Kim
+description: "Jongseok Kim, post-master's researcher at ETRI. Multimodal learning, self-supervised representation learning, and efficient AI."
+url: "https://kjseok-kor.github.io"
+baseurl: ""
+lang: en
+
+markdown: kramdown
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

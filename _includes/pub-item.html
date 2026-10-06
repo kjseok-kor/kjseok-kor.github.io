@@ -1,0 +1,14 @@
+{%- assign p = include.p -%}
+{%- assign hl = site.data.profile.highlight_name -%}
+{%- capture hlname %}<strong><u>{{ hl }}</u></strong>{% endcapture -%}
+<article class="pub">
+  <div class="pub-abbr"><span>{{ p.abbr }}</span></div>
+  <div class="pub-body">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-authors">{{ p.authors | replace: hl, hlname }}</div>
+    <div class="pub-venue"><em>{{ p.venue }}</em>{% if p.metric and p.metric != "" %}<span class="pub-metric">{{ p.metric }}</span>{% endif %}</div>
+    {%- if p.paper and p.paper != "" %}
+    <div class="pub-links"><a class="btn-sm" href="{{ p.paper }}" target="_blank" rel="noopener">PAPER</a></div>
+    {%- endif %}
+  </div>
+</article>
