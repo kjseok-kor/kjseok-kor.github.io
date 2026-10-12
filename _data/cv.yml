@@ -32,11 +32,11 @@ projects:
     detail: "National Research Foundation of Korea · Role: 3D signal processing"
 
 awards:
-  - when: "2026"
-    title: "<strong>Best Paper Award</strong>, KICS Summer Conference 2026"
-  - when: "2026"
+  - when: 2026.05
     title: "<strong>Best Paper Award</strong>, KIIS Spring Conference 2026"
-  - when: "2025"
+  - when: 2026.02
+    title: "<strong>Best Paper Award</strong>, KICS Winter Conference 2026"
+  - when: 2025.02
     title: "<strong>Outstanding Graduate Researcher Award</strong>, Chungbuk National University"
 
 patents:
