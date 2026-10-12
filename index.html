@@ -52,13 +52,14 @@ layout: default
         {%- for t in prof.interests %}<span class="chip">{{ t }}</span>{% endfor %}
       </div>
 
-      <h2 class="section-title">Selected Publications</h2>
-      <div class="pub-list">
-        {%- for p in published %}{% if p.selected %}
-        {% include pub-item.html p=p %}
-        {%- endif %}{% endfor %}
-      </div>
-      <a class="more" href="#publications">All publications →</a>
+      {%- if site.data.cv.awards %}
+      <h2 class="section-title">Honors &amp; Awards</h2>
+      <ul class="news-list award-list">
+        {%- for a in site.data.cv.awards %}
+        <li><time>{{ a.when }}</time><span>{{ a.title }}</span></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
 
       <h2 class="section-title">Recent News</h2>
       <ul class="news-list">
@@ -67,6 +68,14 @@ layout: default
         {%- endfor %}
       </ul>
       <a class="more" href="#news">All news →</a>
+
+      <h2 class="section-title">Selected Publications</h2>
+      <div class="pub-list">
+        {%- for p in published %}{% if p.selected %}
+        {% include pub-item.html p=p %}
+        {%- endif %}{% endfor %}
+      </div>
+      <a class="more" href="#publications">All publications →</a>
     </section>
 
     <!-- ===================== Publications ===================== -->
