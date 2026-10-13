@@ -52,15 +52,6 @@ layout: default
         {%- for t in prof.interests %}<span class="chip">{{ t }}</span>{% endfor %}
       </div>
 
-      {%- if site.data.cv.awards %}
-      <h2 class="section-title">Honors &amp; Awards</h2>
-      <ul class="news-list award-list">
-        {%- for a in site.data.cv.awards %}
-        <li><time>{{ a.when }}</time><span>{{ a.title }}</span></li>
-        {%- endfor %}
-      </ul>
-      {%- endif %}
-
       <h2 class="section-title">Recent News</h2>
       <ul class="news-list">
         {%- for n in site.data.news limit: prof.recent_news_count %}
@@ -76,6 +67,15 @@ layout: default
         {%- endif %}{% endfor %}
       </div>
       <a class="more" href="#publications">All publications →</a>
+
+      {%- if site.data.cv.awards %}
+      <h2 class="section-title">Honors &amp; Awards</h2>
+      <ul class="news-list award-list">
+        {%- for a in site.data.cv.awards %}
+        <li><time>{{ a.when }}</time><span>{{ a.title }}</span></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
     </section>
 
     <!-- ===================== Publications ===================== -->
