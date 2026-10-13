@@ -5,6 +5,7 @@
 #   authors   : author list; your name (profile.yml > highlight_name) is bolded automatically
 #   abbr      : short venue label for the colored badge (e.g. IoT-J, AAAI)
 #   venue     : full venue line shown in italics
+#               (under review: conference abbreviation + year, e.g. "ICASSP 2027"; journal full name)
 #   year      : publication year; published papers are grouped by this
 #   status    : published | under_review
 #   review    : (under_review only) review status label, e.g. "Under Review", "Major Revision"
@@ -20,7 +21,7 @@
 - title: "(Title withheld due to double-blind policy)"
   authors: "Jongseok Kim, Seongae Kang, Ohyun Jo*"
   abbr: ICLR
-  venue: "International Conference on Learning Representations (ICLR 2027)"
+  venue: "ICLR 2027"
   year: 2026
   status: under_review
   review: Under Review
@@ -28,7 +29,7 @@
 - title: "Are All Augmented Views Equally Useful? RD-Bank for Complex-Valued Data Augmentation"
   authors: "Jongseok Kim, Byunghyuk Youn, Woongyu Min, Suwoong Lee, Ohyun Jo*"
   abbr: ICASSP
-  venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027)"
+  venue: "ICASSP 2027"
   year: 2026
   status: under_review
   review: Under Review
@@ -36,15 +37,15 @@
 - title: "From Processed to Raw: Importance-Guided Feature Distillation across Audio Representations"
   authors: "Jongseok Kim, Jonghwan Shin, Suwoong Lee, Ohyun Jo*"
   abbr: ICASSP
-  venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2027)"
+  venue: "ICASSP 2027"
   year: 2026
   status: under_review
   review: Under Review
 
 - title: "(Title withheld due to double-blind policy)"
   authors: "Seongae Kang, Jongseok Kim, Jee Hyun Kim, Yuhan Lee, Ohyun Jo*"
-  abbr: SAC
-  venue: "ACM/SIGAPP Symposium on Applied Computing (SAC 2027)"
+  abbr: ACM SAC
+  venue: "ACM SAC 2027"
   year: 2026
   status: under_review
   review: Under Review
