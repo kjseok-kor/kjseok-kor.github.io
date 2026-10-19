@@ -1,5 +1,5 @@
 {%- assign n = include.n -%}
-<li class="tl-item tl-{{ n.type | default: 'event' }}">
+<li class="tl-item tl-{{ n.type | default: 'activity' }}">
   <div class="tl-meta">
     <time>{{ n.month }}{% if include.show_year %} {{ n.year }}{% endif %}</time>
     {%- if n.type %}<span class="tl-type">{{ n.type | capitalize }}</span>{% endif %}

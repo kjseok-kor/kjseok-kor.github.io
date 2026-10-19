@@ -116,9 +116,6 @@ layout: default
     <section class="page" data-page="news" aria-labelledby="h-news">
       <h2 id="h-news" class="page-title">News</h2>
       {%- assign news_years = site.data.news | map: "year" | uniq %}
-      <div class="news-legend" aria-hidden="true">
-        <span class="tl-paper">Paper</span><span class="tl-award">Award</span><span class="tl-career">Career</span><span class="tl-event">Event</span><span class="tl-patent">Patent</span>
-      </div>
       {%- for y in news_years %}
       <div class="news-year">
         <h3 class="news-year-label">{{ y }}</h3>

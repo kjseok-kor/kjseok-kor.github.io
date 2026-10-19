@@ -317,15 +317,10 @@ img { max-width: 100%; }
 .news-list .award-detail { display: block; font-size: 14px; color: var(--muted); }
 
 /* Timeline (News page and Recent News) */
-.tl-paper  { --tl: #1f5f8b; --tl-bg: #e4eef6; }
-.tl-award  { --tl: #b0590c; --tl-bg: #fbeee0; }
-.tl-career { --tl: #2f7a55; --tl-bg: #e2f2e9; }
-.tl-event  { --tl: #6a4c93; --tl-bg: #efe9f6; }
-.tl-patent { --tl: #5f6b72; --tl-bg: #eceff1; }
+.tl-publication { --tl: #193747; --tl-bg: #e3eaee; }
+.tl-award       { --tl: #b0590c; --tl-bg: #fbeee0; }
+.tl-activity    { --tl: #22707a; --tl-bg: #e3f0f1; }
 
-.news-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 8px; font-size: 13px; color: var(--muted); }
-.news-legend span { display: inline-flex; align-items: center; gap: 6px; }
-.news-legend span::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--tl); }
 
 .news-year { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 0 20px; margin-top: 28px; }
 .news-year-label {
