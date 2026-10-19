@@ -317,9 +317,13 @@ img { max-width: 100%; }
 .news-list .award-detail { display: block; font-size: 14px; color: var(--muted); }
 
 /* Timeline (News page and Recent News) */
-.tl-publication { --tl: #193747; --tl-bg: #e3eaee; }
+.tl-publication { --tl: #2a5fa8; --tl-bg: #e4ecf7; }
 .tl-award       { --tl: #b0590c; --tl-bg: #fbeee0; }
-.tl-activity    { --tl: #22707a; --tl-bg: #e3f0f1; }
+.tl-activity    { --tl: #2f7a55; --tl-bg: #e2f2e9; }
+
+.news-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 8px; font-size: 13px; color: var(--muted); }
+.news-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.news-legend span::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--tl); }
 
 
 .news-year { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 0 20px; margin-top: 28px; }
