@@ -33,14 +33,10 @@ interests:
 # About text. Each item is one paragraph; HTML links are allowed.
 about:
   - >-
-    I am a post-master's researcher in the Spatial Content Research Division at the
-    <a href="https://www.etri.re.kr/eng/main/main.etri">Electronics and Telecommunications Research Institute (ETRI)</a>, Korea,
-    where I develop multimodal-to-CAD generation models that translate image and text inputs into executable CAD programs.
+    I am a post-master's researcher at
+    <a href="https://www.etri.re.kr/eng/main/main.etri">ETRI</a>, Korea, working on multimodal-to-CAD generation.
     I received my M.S. in Computer Science from Chungbuk National University, advised by
-    <a href="https://scholar.google.co.kr/citations?user=PA6LfawAAAAJ">Prof. Ohyun Jo</a>,
-    where I received the Outstanding Graduate Researcher Award.
+    <a href="https://scholar.google.co.kr/citations?user=PA6LfawAAAAJ">Prof. Ohyun Jo</a>.
   - >-
-    My research interests lie in machine learning for heterogeneous and multimodal data, with a focus on
-    representation learning, efficient models, and generative modeling. I have worked on complex-valued wireless signals,
-    audio, and heterogeneous clinical data, and I am currently investigating large language models for structured,
-    parametric CAD program generation.
+    My research focuses on machine learning for heterogeneous and multimodal data, especially
+    representation learning, efficient models, and generative modeling.
