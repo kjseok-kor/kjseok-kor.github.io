@@ -1,0 +1,18 @@
+{%- if include.entries and include.entries.size > 0 -%}
+<section class="cv-section">
+  <h3>{{ include.heading }}</h3>
+  {%- for e in include.entries %}
+  <div class="row">
+    <div class="row-when">{{ e.when }}</div>
+    <div class="row-body">{{ e.title }}
+      {%- if e.detail %}<div class="row-detail">{{ e.detail }}</div>{% endif %}
+      {%- if e.details %}
+      <ul class="row-details">
+        {%- for d in e.details %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+{%- endif -%}

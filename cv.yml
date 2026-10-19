@@ -1,0 +1,71 @@
+# CV page content (kept in sync with the PDF CV).
+# Each section is a list of entries with `when`, `title`, and optional `detail` (one line) or `details` (a list of lines).
+
+experience:
+  - when: 2026/08 – Present
+    title: "<strong>Post-Master's Researcher</strong>, ETRI, Daejeon, South Korea"
+    details:
+      - Spatial Content Research Division, Electronics and Telecommunications Research Institute
+      - Developing multimodal-to-CAD generation models that translate image and text inputs into executable CAD programs (CadQuery).
+      - Investigating large language models for structured, parametric CAD program generation.
+  - when: 2025/03 – 2026/08
+    title: "<strong>Research Assistant</strong>, Chungbuk National University, Cheongju, South Korea"
+    details:
+      - "Information System Lab (Advisor: Prof. Ohyun Jo)"
+      - Led research on representation learning and data augmentation for complex-valued signals (ComplexRep, RD-Bank).
+      - Developed multimodal fusion for heterogeneous clinical data (LeMoF) and cross-representation knowledge distillation for audio.
+  - when: 2021/03 – 2021/12
+    title: "<strong>Software Developer</strong>, Planit Co., Ltd., Cheongju, South Korea"
+    details:
+      - Developed medical imaging software.
+
+education:
+  - when: 2023/03 – 2025/02
+    title: "<strong>M.S. in Computer Science</strong>, Chungbuk National University, Cheongju, South Korea"
+    details:
+      - "Advisor: Prof. Ohyun Jo"
+      - "Thesis: Learning Framework for Enhancing Complex-Valued Sequence Data Processing via Multi-Shape Augmentation"
+      - Outstanding Graduate Researcher Award (awarded annually to one graduate student in the department)
+  - when: 2017/03 – 2023/02
+    title: "<strong>B.S. in Computer Science</strong>, Chungbuk National University, Cheongju, South Korea"
+    details:
+      - Including mandatory military service, Republic of Korea Army (2018/07 – 2020/03)
+
+projects:
+  - when: 2026/08 – Present
+    title: "<strong>Development of a Multimodal Recognition-based AI Authoring Platform Technology for Creating Installation Art Structures</strong>"
+    detail: "Ministry of Culture, Sports and Tourism · Multimodal CAD generation and restoration"
+  - when: 2024/09 – 2026/08
+    title: "<strong>Integrated Underwater Surveillance Research Center for Future Technology Adaptation</strong>"
+    detail: "Ministry of National Defense · Explainable AI for underwater channel assessment"
+  - when: 2022/03 – 2026/08
+    title: "<strong>Ultra-Lightweight Machine Learning based on 3D Imagification of Heterogeneous Time-Series Data for IoIT Convergence Services</strong>"
+    detail: "National Research Foundation of Korea · Time-series imagification and lightweight models"
+  - when: 2022/03 – 2025/12
+    title: "<strong>Development of 5G+ Intelligent Base Station Software Modem</strong>"
+    detail: "Ministry of Science and ICT · Lightweight deep learning for 5G signal detection"
+
+# Also shown on the About page.
+awards:
+  - when: "2026"
+    title: "<strong>Best Paper Award</strong>, KIIS Spring Conference"
+  - when: "2026"
+    title: "<strong>Best Paper Award</strong>, KICS Winter Conference"
+  - when: "2025"
+    title: "<strong>Outstanding Graduate Researcher Award</strong>, Chungbuk National University"
+    detail: Awarded annually to one graduate student in the Department of Computer Science
+
+patents:
+  - when: "2026"
+    title: "<strong>Method and Apparatus for Constructing a Training Dataset Comprising Text Annotations and Parametric CAD Code, Grounded in Target-Domain Shape Samples</strong>"
+    detail: Invention disclosure submitted to ETRI, 2026 (patent application in preparation)
+  - when: 2024/05
+    title: "<strong>Method for Augmenting Time-Series Signal Data for Deep Learning and Computing Device for Executing the Method</strong>"
+    detail: Korean Patent Application No. 10-2024-0071748, filed May 2024
+
+teaching:
+  - when: 2023 – 2024
+    title: "<strong>Teaching Assistant</strong>, Chungbuk National University, Cheongju, South Korea"
+    details:
+      - Operating Systems (Spring 2023)
+      - Computer Networks (Spring 2024)

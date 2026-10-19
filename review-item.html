@@ -1,0 +1,12 @@
+{%- assign p = include.p -%}
+{%- assign hl = site.data.profile.highlight_name -%}
+{%- capture hlname %}<strong><u>{{ hl }}</u></strong>{% endcapture -%}
+<div class="review-item">
+  <div class="review-title">{{ p.title }}</div>
+  <div class="review-authors">{{ p.authors | replace: hl, hlname }}</div>
+  <div class="tags">
+    <span class="tag">{{ p.venue }}</span>
+    <span class="tag tag-warm">{{ p.review | default: "Under Review" }}</span>
+    {%- if p.metric and p.metric != "" %}<span class="pub-metric">{{ p.metric }}</span>{% endif %}
+  </div>
+</div>

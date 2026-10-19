@@ -1,0 +1,63 @@
+# News, newest first. Grouped by `year` on the News page.
+#
+#   year  : 2026
+#   month : Aug (leave empty if unknown)
+#   type  : paper | award | event | career | patent   (sets the label and dot color)
+#   text  : may contain HTML links
+
+- year: 2026
+  month: Aug
+  type: career
+  text: "Joined the Spatial Content Research Division at <a href=\"https://www.etri.re.kr/eng/main/main.etri\">ETRI</a> as a post-master's researcher."
+- year: 2026
+  month: May
+  type: award
+  text: "Received the Best Paper Award at the KIIS Spring Conference 2026."
+- year: 2026
+  month: Feb
+  type: award
+  text: "Received the Best Paper Award at the KICS Winter Conference 2026."
+- year: 2026
+  month: Jan
+  type: event
+  text: "Attended <a href=\"https://aaai.org/conference/aaai/aaai-26/\">AAAI-26</a> in Singapore."
+- year: 2025
+  month: May
+  type: paper
+  text: "ComplexRep accepted to <em>IEEE Internet of Things Journal</em>."
+- year: 2025
+  month: Mar
+  type: career
+  text: "Started as a Research Assistant at the Information System Lab, Chungbuk National University."
+- year: 2025
+  month: Feb
+  type: award
+  text: "Received the Outstanding Graduate Researcher Award, Chungbuk National University."
+- year: 2025
+  month: Feb
+  type: paper
+  text: "Underwater channel analysis paper accepted to <em>J-KICS</em>."
+- year: 2024
+  month: Dec
+  type: paper
+  text: "Denoising paper accepted to <a href=\"https://ieeexplore.ieee.org/document/10920818\">ICAIIC 2025</a>."
+- year: 2024
+  month: Jun
+  type: paper
+  text: "MuShAug accepted to <a href=\"https://ieeexplore.ieee.org/abstract/document/10568927\"><em>IEEE Internet of Things Journal</em></a>."
+- year: 2024
+  month: May
+  type: patent
+  text: "Filed a Korean patent on time-series signal data augmentation."
+- year: 2024
+  month: Feb
+  type: event
+  text: "Attended <a href=\"https://aaai.org/conference/aaai/aaai-24/\">AAAI-24</a> in Vancouver, Canada."
+- year: 2023
+  month: Oct
+  type: paper
+  text: "IncepSeqNet accepted to <a href=\"https://ojs.aaai.org/index.php/AAAI/article/view/30464\">AAAI-24 Student Abstracts</a>."
+- year: 2023
+  month: Sep
+  type: paper
+  text: "Reference-signal index classification paper accepted to <a href=\"https://ieeexplore.ieee.org/abstract/document/10247000\"><em>IEEE Access</em></a>."

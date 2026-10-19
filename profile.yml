@@ -1,0 +1,46 @@
+# Basic profile shown in the sidebar and on the About page.
+
+name: Jongseok Kim
+tagline: "Post-master's researcher at ETRI. Machine learning for heterogeneous and multimodal data."
+photo: /assets/img/profile.jpg
+
+# Sidebar color. The venue badges on publications use the same color.
+cover_color: "#193747"
+
+email: kjseok@etri.re.kr
+scholar: https://scholar.google.co.kr/citations?user=nzFafjcAAAAJ
+github: https://github.com/kjseok-kor
+
+# CV PDF for the "Download PDF" button. Replace assets/files/cv.pdf when the CV changes.
+cv_pdf: /assets/files/cv.pdf
+
+# How your name appears in author lists. Every occurrence is bolded and underlined.
+highlight_name: Jongseok Kim
+
+# Line shown at the end of the Publications page.
+publications_note: "Additionally, 12 papers in Korean domestic journals and conferences (including 2 Best Paper Awards); full list available upon request."
+
+# Number of news items shown on the About page.
+recent_news_count: 4
+
+interests:
+  - Multimodal Learning
+  - Representation Learning
+  - Efficient AI
+  - Generative Models
+  - LLMs
+
+# About text. Each item is one paragraph; HTML links are allowed.
+about:
+  - >-
+    I am a post-master's researcher in the Spatial Content Research Division at the
+    <a href="https://www.etri.re.kr/eng/main/main.etri">Electronics and Telecommunications Research Institute (ETRI)</a>, Korea,
+    where I develop multimodal-to-CAD generation models that translate image and text inputs into executable CAD programs.
+    I received my M.S. in Computer Science from Chungbuk National University, advised by
+    <a href="https://scholar.google.co.kr/citations?user=PA6LfawAAAAJ">Prof. Ohyun Jo</a>,
+    where I received the Outstanding Graduate Researcher Award.
+  - >-
+    My research interests lie in machine learning for heterogeneous and multimodal data, with a focus on
+    representation learning, efficient models, and generative modeling. I have worked on complex-valued wireless signals,
+    audio, and heterogeneous clinical data, and I am currently investigating large language models for structured,
+    parametric CAD program generation.

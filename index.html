@@ -53,9 +53,9 @@ layout: default
       </div>
 
       <h2 class="section-title">Recent News</h2>
-      <ul class="news-list">
+      <ul class="timeline timeline-compact">
         {%- for n in site.data.news limit: prof.recent_news_count %}
-        <li><time>{{ n.date }}</time><span>{{ n.text }}</span></li>
+        {% include news-item.html n=n show_year=true %}
         {%- endfor %}
       </ul>
       <a class="more" href="#news">All news →</a>
@@ -72,7 +72,7 @@ layout: default
       <h2 class="section-title">Honors &amp; Awards</h2>
       <ul class="news-list award-list">
         {%- for a in site.data.cv.awards %}
-        <li><time>{{ a.when }}</time><span>{{ a.title }}</span></li>
+        <li><time>{{ a.when }}</time><span>{{ a.title }}{% if a.detail %}<span class="award-detail">{{ a.detail }}</span>{% endif %}</span></li>
         {%- endfor %}
       </ul>
       {%- endif %}
@@ -107,16 +107,28 @@ layout: default
         {%- endif %}{% endfor %}
       </div>
       {%- endfor %}
+      {%- if prof.publications_note %}
+      <p class="pubs-note">{{ prof.publications_note }}</p>
+      {%- endif %}
     </section>
 
     <!-- ===================== News ===================== -->
     <section class="page" data-page="news" aria-labelledby="h-news">
       <h2 id="h-news" class="page-title">News</h2>
-      <ul class="news-list news-full">
-        {%- for n in site.data.news %}
-        <li><time>{{ n.date }}</time><span>{{ n.text }}</span></li>
-        {%- endfor %}
-      </ul>
+      {%- assign news_years = site.data.news | map: "year" | uniq %}
+      <div class="news-legend" aria-hidden="true">
+        <span class="tl-paper">Paper</span><span class="tl-award">Award</span><span class="tl-career">Career</span><span class="tl-event">Event</span><span class="tl-patent">Patent</span>
+      </div>
+      {%- for y in news_years %}
+      <div class="news-year">
+        <h3 class="news-year-label">{{ y }}</h3>
+        <ul class="timeline">
+          {%- for n in site.data.news %}{% if n.year == y %}
+          {% include news-item.html n=n %}
+          {%- endif %}{% endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
     </section>
 
     <!-- ===================== CV ===================== -->
